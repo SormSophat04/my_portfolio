@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import imageProfile from "../assets/profile.jpg";
+import imageProfile2 from "../assets/portfolio.png";
 
 // A reusable Link component for smooth scrolling.
 interface SmoothScrollLinkProps {
@@ -8,17 +8,21 @@ interface SmoothScrollLinkProps {
   className?: string;
 }
 
-const SmoothScrollLink: React.FC<SmoothScrollLinkProps> = ({ href, children, className }) => {
-const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+const SmoothScrollLink: React.FC<SmoothScrollLinkProps> = ({
+  href,
+  children,
+  className,
+}) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const target: Element | null = document.querySelector(href);
     if (target) {
-        target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-        });
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
-};
+  };
   return (
     <a href={href} onClick={handleClick} className={className}>
       {children}
@@ -33,7 +37,10 @@ function Home() {
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const words = React.useMemo(() => ["Sorm Sophat", "Mobile Developer", "Web Developer"], []);
+  const words = React.useMemo(
+    () => ["Sorm Sophat", "Mobile Developer", "Web Developer"],
+    []
+  );
   const typingSpeed = 150;
   const deletingSpeed = 100;
   const delay = 2000;
@@ -125,7 +132,7 @@ function Home() {
           style={{ transitionDelay: "200ms" }} // Stagger the animation
         >
           <img
-            src={imageProfile}
+            src={imageProfile2}
             alt="A professional headshot or relevant portfolio image"
             // Changed from rounded-full to rounded-2xl for a square shape
             className="rounded-2xl shadow-2xl object-cover w-64 h-64 md:w-80 md:h-100"
