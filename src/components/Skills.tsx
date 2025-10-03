@@ -72,7 +72,7 @@ function Skills() {
   const skillsData = [
     {
       name: "php & Laravel",
-      level: 80,
+      level: 70,
       icon: <FaLaravel className="text-red-400" size={24} />,
     },
     {
@@ -107,7 +107,7 @@ function Skills() {
     },
     {
       name: "Tailwind & Bootstrap",
-      level: 90,
+      level: 80,
       icon: <FaBootstrap className="text-blue-600" size={24} />,
     },
     {
