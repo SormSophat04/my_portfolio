@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import imageProfile2 from "../assets/portfolio.png";
+import imagePF from "../assets/pf.png";
 
 // A reusable Link component for smooth scrolling.
 interface SmoothScrollLinkProps {
@@ -132,10 +132,10 @@ function Home() {
           style={{ transitionDelay: "200ms" }} // Stagger the animation
         >
           <img
-            src={imageProfile2}
+            src={imagePF}
             alt="A professional headshot or relevant portfolio image"
             // Changed from rounded-full to rounded-2xl for a square shape
-            className="rounded-2xl shadow-2xl object-cover w-64 h-64 md:w-80 md:h-100"
+            className="rounded-2xl shadow-2xl object-cover w-64 h-64 md:w-80 md:h-120"
             onError={(e) => {
               const img = e.target as HTMLImageElement;
               img.onerror = null;

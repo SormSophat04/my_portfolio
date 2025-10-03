@@ -1,6 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
-import imageProfile from "../assets/profile.jpg";
-import { FaAndroid, FaBootstrap, FaDatabase, FaFlutter, FaJava, FaLaravel, FaNodeJs, FaReact, FaRobot } from "react-icons/fa6";
+import imageProfile2 from "../assets/portfolio.png";
+import {
+  FaAndroid,
+  FaBootstrap,
+  FaC,
+  FaDatabase,
+  FaFlutter,
+  FaJava,
+  FaLaravel,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa6";
 
 // Individual Skill Item Component
 type SkillItemProps = {
@@ -61,20 +71,19 @@ const SkillItem: React.FC<SkillItemProps> = ({ icon, name, level }) => {
 function Skills() {
   const skillsData = [
     {
-      name: "React & Next.js",
-      level: 80,
-      icon: <FaReact className="text-cyan-400" size={24} />,
-    },
-    {
       name: "php & Laravel",
       level: 80,
       icon: <FaLaravel className="text-red-400" size={24} />,
     },
-
     {
       name: "Flutter & Dart",
       level: 70,
       icon: <FaFlutter className="text-blue-500" size={24} />,
+    },
+    {
+      name: "React & Next.js",
+      level: 60,
+      icon: <FaReact className="text-cyan-400" size={24} />,
     },
     {
       name: "Java & Spring Boot",
@@ -102,9 +111,9 @@ function Skills() {
       icon: <FaBootstrap className="text-blue-600" size={24} />,
     },
     {
-      name: "AI & Machine Learning",
-      level: 10,
-      icon: <FaRobot className="text-red-400" size={24} />,
+      name: "C# & ASP.NET",
+      level: 20,
+      icon: <FaC className="text-red-400" size={24} />,
     },
   ];
 
@@ -126,7 +135,7 @@ function Skills() {
           {/* Left Column: Image */}
           <div className="w-full md:w-2/5 lg:w-1/4">
             <img
-              src={imageProfile}
+              src={imageProfile2}
               alt="A portrait of the developer"
               className="rounded-xl shadow-2xl shadow-cyan-500/20 w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300"
               onError={(e) => {
