@@ -87,12 +87,12 @@ function Skills() {
     },
     {
       name: "Java & Spring Boot",
-      level: 40,
+      level: 60,
       icon: <FaJava className="text-red-400" size={26} />,
     },
     {
       name: "Node.js & Express",
-      level: 40,
+      level: 50,
       icon: <FaNodeJs className="text-green-400" size={24} />,
     },
     {
@@ -102,17 +102,17 @@ function Skills() {
     },
     {
       name: "Databases (SQL & NoSQL)",
-      level: 70,
+      level: 60,
       icon: <FaDatabase className="text-purple-400" size={24} />,
     },
     {
       name: "Tailwind & Bootstrap",
-      level: 80,
+      level: 70,
       icon: <FaBootstrap className="text-blue-600" size={24} />,
     },
     {
       name: "C# & ASP.NET",
-      level: 20,
+      level: 10,
       icon: <FaC className="text-red-400" size={24} />,
     },
   ];
